@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Chess</title>
+    <title>Unity WebGL Player | SChess</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/Yeni.loader.js"></script>
+    <script src="Build/SChess-WebGL.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,14 +25,14 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Yeni.data.unityweb",
-        frameworkUrl: "Build/Yeni.framework.js.unityweb",
-        codeUrl: "Build/Yeni.wasm.unityweb",
+        dataUrl: "Build/SChess-WebGL.data.unityweb",
+        frameworkUrl: "Build/SChess-WebGL.framework.js.unityweb",
+        codeUrl: "Build/SChess-WebGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Chess",
-        productVersion: "1.0",
-        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        companyName: "PY",
+        productName: "SChess",
+        productVersion: "DevBuild",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
